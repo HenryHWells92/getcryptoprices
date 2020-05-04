@@ -1,5 +1,6 @@
 # Importing CryptoCurrency price data into python notebooks using the CryptoCompare API
 
+Note: The code in this repo should be pip-installable and usable with a one-line import in iPython notebooks, per the following:
 
 I read a blog post by Alex Galea (github: agalea91) in 2017 that gave a really simple overview of how to access data in jupyter notebooks from the CryptoCompare API.
 
@@ -9,3 +10,12 @@ It's been a while since I updated any of this code and it's likely to have bugs 
 
 Original blog post: https://medium.com/@galea/cryptocompare-api-quick-start-guide-ca4430a484d4
 aglea91's "cryptocompare-api" repo: https://github.com/agalea91/cryptocompare-api
+
+
+In your terminal:
+clone this repo to your computer: git clone [remote for this repo]
+install this repo as a package locally: python -m pip install [file path for this repo on your local computer]
+
+In iPython notebook:
+import getcryptoprices.getprices as getprices
+df = getprices.[function call here]
